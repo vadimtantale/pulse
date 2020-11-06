@@ -30,4 +30,9 @@ gulp.task('watch', function() {
     gulp.watch("src/sass/**/*.+(scss|sass)", gulp.parallel('styles'));
 })
 
-gulp.task('default', gulp.parallel('watch', 'server', 'styles'));
+gulp.task('mailer', function() {
+    return gulp.src("src/mailer/**/*")
+        .pipe(gulp.dest("dist/mailer"))
+});
+
+gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'mailer'));

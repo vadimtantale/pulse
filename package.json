@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
-
   "devDependencies": {
     "browser-sync": "^2.26.12",
     "gulp": "^4.0.2",
@@ -13,7 +12,6 @@
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.1.0"
   },
-  
   "browserslist": [
     "last 1 versions",
     "> 1%",
